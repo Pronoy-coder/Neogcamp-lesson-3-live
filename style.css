@@ -19,6 +19,11 @@ hr {
     /**top is 2, right & left is 0**/
 }
 
+/** Spaces **/
+.margin-md {
+    margin: 10rem;
+}
+
 /** Padding goes like top->right->bottom->left
 If ou give only top & right, top one will be applied to bottom and right one will be applied to left**/
 
@@ -40,16 +45,22 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 }
 
 .link-primary {
+    padding: 10px 20px;
+    margin: 4px 2px;
     background-color: var(--primary-color);
     border-radius: 0.5rem;
-    /**Put space btween "0" and ".5" ie. "0 .5 and see what happens"**/
+    /**Put space between "0" and ".5" ie. "0 .5 and see what happens"**/
     color: white
+    
 }
 
 .link-secondary {
+    padding: 10px 20px;
+    margin: 4px 2px;
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 2px solid var(--primary-color)
+    
 }
 
 /** look into BEM naming convention for CSS **/
@@ -96,6 +107,7 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 
 .hero {
     padding: 2rem;
+    padding-top: 5rem;
 }
 
 .hero .hero-img {
@@ -144,6 +156,11 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 
 .footer .link {
     color: white;
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
 }
 
 .footer ul {

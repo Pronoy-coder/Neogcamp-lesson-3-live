@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Library</title>
+    <!-- 3rd way of doing CSS-->
+    <link href="/style.css" rel="stylesheet" />
+    <!-- 1st way of doing CSS: Style tag
+        <style>
+        body {
+            color: red;
+        }
+    </style> -->
+</head>
+
+<body style="font-family: sans-serif;">
+    <h1>Pronoy's Component library</h1>
+    <!-- 2nd way of doing CSS style="color: red"-->
+
+    <p>I'm attending tanay pratap's neocamp & I want to make a library which would make all my
+        projects look good and consistent</p>
+
+    <hr>
+
+
+    <h2>@typography</h2>
+
+    <h1>This is the biggest heading</h1>
+    <h1> Another Heading</h1>
+    <h2> This is the 2nd biggest heading </h2>
+    <p> let me show you the normal text. This is a free flowing text and will wrap at the end
+        like a paragraph</p>
+    <p>This paragraph will have <strong> bold </strong>text</p>
+    <small> This is relatively smaller text</small>
+
+    <h2>@container</h2>
+
+    <h3>fluid container</h3>
+    <div class="container"> This is a fluid container and it will go till the end of the page</div>
+
+    <h3>center container</h3>
+    <div class="container container-center"> This is a centered container and it will go till the specified width</div>
+
+    <hr>
+
+    <h2>@Links</h2>
+
+    <a class="link link-primary" href="/"> Primary Link
+    </a>
+    <a class="link link-secondary" href="/"> Secondary
+        Link </a>
+    <!--
+            Ths also works :) 
+            <a class="link link-primary" style="border:#7C3AED; border-width:2px; border-style:solid;" href="/"> Primary Link
+            </a>  
+            <a class="link link-secondary" style="border:#7C3AED; border-width:2px; border-style:solid;" href="/"> Secondary
+            Link </a>
+        -->
+
+    <hr>
+
+    <h2>@Lists</h2>
+
+    <h3>Unordered list</h3>
+
+    <p> This list will not have the bullet</p>
+
+
+    <ul class="list-non-bullet">
+        <li>Item one</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ul>
+
+
+    <h3>Unordered inline Lists</h3>
+
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline Item One</li>
+        <li class="list-item-inline">Inline Item Two</li>
+        <li class="list-item-inline">Inline Item Three</li>
+    </ul>
+
+    <h3>Reverse ordered list</h3>
+
+    <ol reversed>
+        <li>Milk</li>
+        <li>eggs</li>
+        <li>break</li>
+    </ol>
+
+
+    <hr />
+
+    <h2>@nav</h2>
+
+    <nav style="font-family: sans-serif;" class="navigation">
+        <div class="nav-brand">I'm Brand</div>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link link-active " href="/">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">products</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">about</a>
+            </li>
+        </ul>
+    </nav>
+
+    <hr>
+
+
+    <h2>@header</h2>
+
+    <header class="hero">
+        <img class="hero-img" src="Images/hero.svg" />
+        <h1 class="hero-heading">Aadarsh Balika the <span class="heading-inverted">Web Developer</span> </h1>
+        <!--For Highlighting texts-->
+    </header>
+    <!--OR you can go with "<h1 class="hero-heading">Aadarsh Balika the <span style="color: var(--primary-color);">Web Developer</span> </h1>"-->
+    <hr>
+
+    <h2>@section</h2>
+    <section class="section">
+        <div class="container container-center">
+            <h1>white section</h1>
+            <p>We are an open community of developers building resources for a better Web, regardless of brand, browser,
+                or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue
+                to drive innovation on the Web to serve the greater good. It starts here, with you.</p>
+
+        </div>
+    </section>
+
+    <section class="section ow">
+        <div class="container container-center">
+            <h1> Off white section</h1>
+            <p>We are an open community of developers building resources for a better Web, regardless of brand, browser,
+                or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue
+                to drive innovation on the Web to serve the greater good. It starts here, with you.</p>
+        </div>
+    </section>
+    <hr>
+
+    <h2>@footer</h2>
+
+    <footer class="footer">
+        <div class="footer-header">Some text inside footer</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="/"> social 1 </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/"> social 2 </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/"> social 3 </a>
+            </li>
+        </ul>
+    </footer>
+
+
+
+
+
+    <!-- <div style="height: 20vh;"></div> -->
+
+
+</body>
+
+</html>
