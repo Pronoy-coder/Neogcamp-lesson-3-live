@@ -11,6 +11,7 @@
 body {
     font-family: 'Montserrat',
         sans-serif;
+        margin: 0px;
 }
 
 hr {
@@ -104,6 +105,7 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 }
 
 .hero .hero-heading {
+    text-align: center;
     padding-top: 1rem;
     color: var(--dark-gray);
 }
@@ -128,4 +130,22 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 .ow {
     background-color: var(--off-white);
 
+}
+
+/** Footer **/
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+.footer .link {
+    color: white;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
 }
