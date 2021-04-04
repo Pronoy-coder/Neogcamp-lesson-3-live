@@ -2,18 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <!-- 3rd way of doing CSS-->
     <link href="style.css" rel="stylesheet" />
+    <!-- 1st way of doing CSS: Style tag
+        <style>
+        body {
+            color: red;
+        }
+    </style> -->
 </head>
 
 <body>
     <h1>Pronoy's Component library</h1>
+    <!-- 2nd way of doing CSS style="color: red"-->
+
     <p>I'm attending tanay pratap's neocamp & I want to make a library which would make all my
         projects look good and consistent</p>
 
-    <hr> 
+    <hr>
 
 
     <h2>@typography</h2>
@@ -23,7 +32,7 @@
     <h2> This is the 2nd biggest heading </h2>
     <p> let me show you the normal text. This is a free flowing text and will wrap at the end
         like a paragraph</p>
-        <p>This paragraph will have <strong>bold</strong>text</p>
+    <p>This paragraph will have <strong>bold</strong>text</p>
     <small> This is relatively smaller text</small>
 
     <h2>@container</h2>
@@ -32,23 +41,33 @@
     <div class="container"> This is a fluid container and it will go till the end of the page</div>
 
     <h3>center container</h3>
-    <div class="container
-    container-center"> This is a centered container and it will go till the specified width</div>
+    <div class="container container-center"> This is a centered container and it will go till the specified width</div>
 
     <hr>
 
     <h2>@Links</h2>
-    <a class="link link-primary"  style="border:#7C3AED; border-width:2px; border-style:solid;"
-    href="/">Primary Link</a>
-    <a class="link link-secondary" style="border:#7C3AED; border-width:2px; border-style:solid;"
-    href="/">Secondary Link</a>
+
+    <a class="link link-primary" href="/"> Primary Link
+     </a>
+    <a class="link link-secondary" href="/"> Secondary
+        Link </a>
+        <!--
+            Ths also works :) 
+            <a class="link link-primary" style="border:#7C3AED; border-width:2px; border-style:solid;" href="/"> Primary Link
+            </a>  
+            <a class="link link-secondary" style="border:#7C3AED; border-width:2px; border-style:solid;" href="/"> Secondary
+            Link </a>
+        -->
 
     <hr>
 
     <h2>@Lists</h2>
 
-    <h3> This is a unordered Lists</h3>
-    <p>This list will not have the bullet</p>
+    <h3>Unordered list</h3>
+
+    <p> This list will not have the bullet</p>
+
+
     <ul class="list-non-bullet">
         <li>Item one</li>
         <li>Item Two</li>
@@ -58,18 +77,18 @@
 
     <h3>Unordered inline Lists</h3>
 
-    <ul class="list-non-bullet">
-        <li>Inline Item One</li>
-        <li>Inline Item Two</li>
-        <li>Inline Item Three</li>
+    <ul class="list-non-bullet" >
+        <li class="list-item-inline">Inline Item One</li>
+        <li class="list-item-inline">Inline Item Two</li>
+        <li class="list-item-inline">Inline Item Three</li>
     </ul>
 
     <h3>Reverse ordered list</h3>
 
     <ol reversed>
-        <li class="list-item-inline">Milk</li>
-        <li class="list-item-inline">eggs</li>
-        <li class="list-item-inline">break</li>
+        <li>Milk</li>
+        <li>eggs</li>
+        <li>break</li>
     </ol>
 
 
@@ -77,17 +96,20 @@
 
     <h2>@nav</h2>
 
-    <nav>
-        <div>Iambrand</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <nav class="navigation">
+        <div class="nav-brand">I'm Brand</div>
+        <ul class="list-non-bullet">
+            <li 
+            class="list-item-inline">
+                <a class="link link-active" href="/">home</a>
             </li>
-            <li>
-                <a href="/">products</a>
+            <li 
+            class="list-item-inline">
+                <a class="link" href="/">products</a>
             </li>
-            <li>
-                <a href="/">about</a>
+            <li 
+            class="list-item-inline">
+                <a class="link" href="/">about</a>
             </li>
         </ul>
     </nav>
@@ -132,7 +154,7 @@
 
 
     <!-- <div style="height: 20vh;"></div> -->
-    
+
 
 </body>
 

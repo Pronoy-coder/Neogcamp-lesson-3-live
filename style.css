@@ -5,9 +5,9 @@
 }
 
 
-body{
-    font-family: 'Montserrat', 
-    sans-serif;
+body {
+    font-family: 'Montserrat',
+        sans-serif;
 }
 
 hr {
@@ -15,11 +15,14 @@ hr {
     /**top is 2, right & left is 0**/
 }
 
+/** Padding goes like top->right->bottom->left
+If ou give only top & right, top one will be applied to bottom and right one will be applied to left**/
+
 .container {
     padding: 0rem 1rem;
 }
 
-.container-center{
+.container-center {
     max-width: 600px;
     margin: auto;
 }
@@ -35,22 +38,51 @@ hr {
 .link-primary {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
-    color: white}
+    /**Put space btween "0" and ".5" ie. "0 .5 and see what happens"**/
+    color: white
+}
 
 .link-secondary {
     color: var(--primary-color);
     border-radius: 0.5rem;
-    border: 1px solid var (var(--primary-color);
-}
+    border: 2px solid var(--primary-color)
+    }
 
-/** look into BEM naming convention for CSS **/
+    /** look into BEM naming convention for CSS **/
 
-
-/* Lists */
+    /** Lists **/
+    
 .list-non-bullet {
     list-style: none;
 }
+
 .list-item-inline {
     display: inline;
     padding: 0rem 0.5rem;
+}
+
+/** Navigation **/
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color: white;
+}
+/*Inside Navigation there's a link class whose text I wanna change*/
+
+.navigation .link-active {
+    font-weight: bold;
 }
